@@ -57,18 +57,15 @@ echo color("green"," =================================== \n");
 				echo color("green","+] Your access token : ".$token."\n\n");
 				save("token.txt",$token);
 					}
-				}
 			}else{
 				echo color("red","-] The code you entered is incorrect");
 				echo color("green", "\n =================================== \n\n");
 				echo color("yellow","!] Please input again \n");
 				goto otp;
-            }
 		}else{
 			echo color("red","-] This number already registered");
 			echo color("green", "\n =================================== \n\n");
 			echo color("yellow","!] Please register again using other number \n");
 			goto ulang;
-        }
 //	}
 // echo change()."\n";
